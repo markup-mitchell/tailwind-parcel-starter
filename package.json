@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss index.css -o dist/style.css"
+    "build:css": "postcss index.css -o tailwind.css",
+    "dev": "parcel index.html -p 2468",
+    "build": "parcel build index.html --out-dir built"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
-    "cssnano": "^4.1.10",
     "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-purgecss": "^2.1.0",
     "postcss": "^7.0.14",
-    "purgecss": "^1.2.0",
     "tailwindcss": "^0.7.4"
   },
   "dependencies": {}
